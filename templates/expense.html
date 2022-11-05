@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Expenses</title>
+</head>
+<body>
+     <h1>
+          Expenses
+     </h1>
+     <table>
+          <thead>
+               <th>First name</th>
+               <th>last name</th>
+               <th>expense</th>
+               <th>function</th>
+          </thead>
+          <tr>
+               <td>{{response.expenses[0].users[0].user.first_name}}</td>
+               <td>{{response.expenses[0].users[0].user.last_name}}</td>
+               <td>{{response.expenses[0].users[0].owed_share}}</td>
+               <td>
+                    <a href="http://127.0.0.1:5000/create_qr">Click me to pay</a>
+               </td>
+          </tr>
+
+     </table><br>
+
+     
+     <p><a href="http://127.0.0.1:5000">Home</a></p>
+     <script>
+
+     </script>
+</body>
+</html>
